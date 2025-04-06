@@ -1,0 +1,25 @@
+<mat-card class="game-card">
+    <mat-card-header>
+      <div class="team-container">
+        <img [src]="team1Logo" alt="Team 1 Logo" class="logo">
+        <span class="team-name">{{ team1Name }}</span>
+      </div>
+  
+      <!-- FIX SCORE ALIGNMENT -->
+      <div class="score-container">
+        <span class="score-number">{{ score1 }}</span>
+        <span>-</span>
+        <span class="score-number">{{ score2 }}</span>
+      </div>
+  
+      <div class="team-container">
+        <img [src]="team2Logo" alt="Team 2 Logo" class="logo">
+        <span class="team-name">{{ team2Name }}</span>
+      </div>
+    </mat-card-header>
+  
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="openDetails()">View Details</button>
+    </mat-card-actions>
+  </mat-card>
+  
